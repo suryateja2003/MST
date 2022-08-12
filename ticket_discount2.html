@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+var m,t,c=150,d,tp;
+m=window.prompt("enter the movie name");
+document.write("<h3 style='color:red'>");
+document.write("movie name:"+m);
+document.write("<br>");
+t=window.prompt("enter the number of tickets");
+document.write("<h3 style='color:black'>");
+document.write("total tickets:"+t);
+if(t>=6 || t<=0)
+alert("booking is not allowed");
+else if(t>=1 && t<=2) 
+{
+var r=t*c;
+document.write("<br>");
+document.write("total tickets cost:"+r);
+}
+else
+{
+var r=t*c;
+d=r*10/100;
+document.write("<h2 style='color:blue'>");
+document.write("discount:"+d);
+document.write("<br>");
+tp=r-d;
+document.write("<h1 style='color:green'>");
+document.write("after discount cost:"+tp);
+document.write("<br>"); 
+}
+</script>
+</head>
+</html>
