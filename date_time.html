@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+const days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const months=["January","Febrauary","March","April","May","June","July","August","September","October","November","December"];
+// creation of date object
+var d=new Date();
+document.write("<font color='green'>");
+document.write(d); 
+document.write("</font>");
+var day=d.getDay();
+document.write("<br><font color='red'>");
+document.write("Day is "+day+"  "+days[day]); // returns current day 
+var m=d.getMonth();
+document.write("<br>"+"Month is "+m+" "+months[m]); // returns month number (jan=0,feb=1,mar=2....)
+var y=d.getFullYear();
+document.write("<br>"+"Year is "+y); // returns year
+var h=d.getHours();
+document.write("<br>"+"Hour is "+h); // returns hours
+var mi=d.getMinutes();
+document.write("<br>"+"Minutes is "+mi);  // returns  minutes
+var se=d.getSeconds();
+document.write("<br>"+"Seconds is "+se); // returns seconds
+
+var t=d.getTime();
+document.write("<br>"+"Time is "+t); // returns time in millseconds
+
+</script>
+</head>
+</html>
