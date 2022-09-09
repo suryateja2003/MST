@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+function  myDisplayer(some){
+	alert(some+" inform to subscribers");
+}
+let promise=new Promise(function(resolve,reject){
+	song_status=window.prompt("Enter song status i.e ready or not");
+	if(song_status=="ready"){
+		resolve("Song ready");
+	}
+	if(song_status="not ready"){
+		resolve("Song is not ready");
+	}
+	});
+promise.then( 
+	function(value){
+		myDisplayer(value);},
+	function(error){
+		myDisplayer(error);});
+	
+	
+</script>
+<body>
+</html>
