@@ -1,0 +1,20 @@
+<html>
+<body>    
+          
+<h3 id="demo"></h3>
+<h2 id="d"  ></h2>   
+<script>
+	
+	function sub(a,b,callback){
+	document.getElementById("demo").innerHTML=(a-b);	
+	callback();
+	}
+	function f(){
+		document.getElementById("d").innerHTML="Hello everyone";
+	}
+	var a=parseInt(window.prompt("Enter a value"));
+	var b=parseInt(window.prompt("Enter b value"));
+	sub(a,b,f);
+</script>
+</body>
+</html>
